@@ -1,4 +1,18 @@
-<!DOCTYPE html>
+<a-scene inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui="">
+      <a-assets>
+        <img id="city" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg">
+        
+      <img id="boxTexture" src="https://raw.githubusercontent.com/silaslovescode/Polkadot/main/og-polkadot.png" crossorigin="anonymous"></a-assets>
+      <a-sky id="image-360" radius="10" src="#city" animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade" animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade" material="" geometry=""></a-sky>      
+      
+      <!-- uMap here can take any asset loading type, whether using a-assets, or placing the url in directly. -->
+      <!--      refer to asset loading to determine which strategy is best for you. -->
+      <!--       https://aframe.io/docs/1.2.0/core/asset-management-system.html -->
+      <a-box material="shader: texture-shader; uMap: [object HTMLImageElement]; flatShading: true; npot: true; side: double; transparent: true; vertexColors: vertex; blending: additive" width="1" height="1" depth="1" position="0 3.48396 -2" animation="property: rotation; to: 0 0 0; easing: linear; loop: NaN; dur: 10000; startEvents: click" geometry="primitive: circle; skipCache: true" visible="" scale="1 1 3">
+      </a-box>
+            
+      
+    <div class="a-loader-title" style="display: none;">silas loves polkadot</div><div class="a-loader-title" style="display: none;">silas loves polkadot</div></a-scene><!DOCTYPE html>
 <html>
   <head>
     <title>silas loves polkadot</title>
