@@ -13,13 +13,18 @@
   <body>
     <a-scene>
       <a-assets>
+        <img id="city" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg">
         <img id="boxTexture" src="https://raw.githubusercontent.com/silaslovescode/Polkadot/main/og-polkadot.png">
       </a-assets>
+      <a-sky id="image-360" radius="10" src="#city"
+             animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
+             animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade"></a-sky>      
+      
       <!-- uMap here can take any asset loading type, whether using a-assets, or placing the url in directly. -->
       <!--      refer to asset loading to determine which strategy is best for you. -->
       <!--       https://aframe.io/docs/1.2.0/core/asset-management-system.html -->
       <a-sphere material="shader: texture-shader; uMap: #boxTexture"
-        radius="1.25"
+        radius="0.25"
         position="0 1.5 -2"
         animation="property: rotation; to: 360 360 0; easing: linear; loop: true; dur: 10000" 
       >
