@@ -23,12 +23,11 @@
       <!-- uMap here can take any asset loading type, whether using a-assets, or placing the url in directly. -->
       <!--      refer to asset loading to determine which strategy is best for you. -->
       <!--       https://aframe.io/docs/1.2.0/core/asset-management-system.html -->
-      <a-sphere material="shader: texture-shader; uMap: #boxTexture"
-        radius="0.2"
+      <a-box material="shader: texture-shader; uMap: #boxTexture"
         position="0 1.5 -2"
         animation="property: rotation; to: 360 360 0; easing: linear; loop: true; dur: 10000" 
       >
-      </a-sphere>
+      </a-box>
       <a-sphere material="shader: texture-shader; uMap: #boxTexture"
         radius="0.1"
         position="0 1.5 -2"
