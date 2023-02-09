@@ -11,35 +11,25 @@
     <script src="texture-shader.js"></script>
   </head>
   <body>
-    <a-scene>
+<a-scene inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui="">
       <a-assets>
         <img id="city" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg">
-        <img id="boxTexture" src="https://raw.githubusercontent.com/silaslovescode/Polkadot/main/og-polkadot.png">
-      </a-assets>
-      <a-sky id="image-360" radius="10" src="#city"
-             animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
-             animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade"></a-sky>      
+        
+      <img id="boxTexture" src="https://raw.githubusercontent.com/silaslovescode/Polkadot/main/og-polkadot.png" crossorigin="anonymous"></a-assets>
+      <a-sky id="image-360" radius="10" src="#city" animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade" animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade" material="" geometry="" scale="1 1 1" position=""></a-sky>      
       
       <!-- uMap here can take any asset loading type, whether using a-assets, or placing the url in directly. -->
       <!--      refer to asset loading to determine which strategy is best for you. -->
       <!--       https://aframe.io/docs/1.2.0/core/asset-management-system.html -->
-      <a-box material="shader: texture-shader; uMap: #boxTexture"
-        width="1"
-        height="1"
-        depth="1"     
-        position="0 1.5 -2"
-        animation="property: rotation; to: 360 360 0; easing: linear; loop: true; dur: 10000" 
-      >
+      <a-box material="shader: texture-shader; uMap: [object HTMLImageElement]" width="1" height="1" depth="1" position="0 2 0" animation="property: rotation; to: 360 360 0; easing: linear; loop: NaN; dur: 10000" geometry="" rotation="228.90239999997988 228.90239999997988 0">
+      </a-box><a-box material="shader: texture-shader; uMap: [object HTMLImageElement]" width="1" height="1" depth="1" position="0 6 0" animation="property: rotation; to: 360 360 0; easing: linear; loop: NaN; dur: 10000" geometry="" rotation="360 360 0">
+      </a-box><a-box material="shader: texture-shader; uMap: [object HTMLImageElement]" width="1" height="1" depth="1" position="0 2 0" animation="property: rotation; to: 360 360 0; easing: linear; loop: NaN; dur: 10000" geometry="" rotation="360 360 0">
+      </a-box><a-box material="shader: texture-shader; uMap: [object HTMLImageElement]" width="1" height="1" depth="1" position="0 2 0" animation="property: rotation; to: 360 360 0; easing: linear; loop: NaN; dur: 10000" geometry="" rotation="360 360 0">
+      </a-box><a-box material="shader: texture-shader; uMap: [object HTMLImageElement]" width="1" height="1" depth="1" position="0 4 0" animation="property: rotation; to: 360 360 0; easing: linear; loop: NaN; dur: 10000" geometry="" rotation="360 360 0">
+      </a-box><a-box material="shader: texture-shader; uMap: [object HTMLImageElement]" width="1" height="1" depth="1" position="0 2 0" animation="property: rotation; to: 360 360 0; easing: linear; loop: NaN; dur: 10000" geometry="" rotation="360 360 0">
+      </a-box><a-box material="shader: texture-shader; uMap: [object HTMLImageElement]" width="1" height="1" depth="1" position="0 2 0" animation="property: rotation; to: 360 360 0; easing: linear; loop: NaN; dur: 10000" geometry="" rotation="360 360 0">
       </a-box>
-      <a-box material="shader: texture-shader; uMap: #boxTexture"
-        width="1"
-        height="1"
-        depth="1"     
-        position="0 2.5 -2"
-        animation="property: rotation; to: 360 360 0; easing: linear; loop: true; dur: 10000" 
-      >
-      </a-box>      
-      <a-box color="#CCC" width="3" depth="3" height="0.1" position="0 1 -2"></a-box>
-    </a-scene>
+      <a-box color="#CCC" width="3" depth="3" height="0.1" position="" material="" geometry=""></a-box>
+    <div class="a-loader-title" style="display: none;">silas loves polkadot</div></a-scene>
   </body>
 </html>
